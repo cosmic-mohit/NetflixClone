@@ -12,9 +12,7 @@ const Hero = () => {
                     className="absolute inset-0 w-full h-full object-cover"
                 />
 
-                <div className="absolute top-0 left-0 z-20 mt-5 mx-5">
-                    <Header />
-                </div>
+                <Header />
                 
                 <div className="absolute inset-0 bg-gradient-to-br from-black/95 via-black/50 to-black/95 pointer-events-none" />
 

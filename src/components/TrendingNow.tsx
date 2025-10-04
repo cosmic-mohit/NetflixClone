@@ -113,6 +113,7 @@ const MovieData = {
       "vote_average": 6.6,
       "vote_count": 13807
     },
+
     {
       "adult": false,
       "backdrop_path": "/jniabJVBSW3EqLlyhjxWCZjVkiE.jpg",

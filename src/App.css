@@ -147,3 +147,34 @@ a:hover {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Container that holds all movie cards */
+.movies {
+  counter-reset: movieCounter;
+}
+
+/* Each movie card */
+.movie-card {
+  position: relative;
+  counter-increment: movieCounter;
+}
+
+.movie-card::before {
+  content: counter(movieCounter);
+  position: absolute;
+  font-size: 4rem;
+  bottom: 0.1rem;  
+  font-weight: bold;
+  color: black;
+  overflow:visible;
+  -webkit-text-stroke: white 0.5px;
+  z-index: 20;
+  display: inline-block; /* shrink-wrap the number */
+  cursor: pointer; /* makes hover easier */
+}
+
+.movie-card:hover::before {
+  color: var(--netflix-red);
+}
+
+
